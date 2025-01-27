@@ -1,0 +1,54 @@
+# Product and Counter Test Automation
+
+This project automates the testing of several core functionalities in a web application, including adding, searching, editing, and deleting products, as well as verifying the behavior of a counter. The tests are implemented using Selenium WebDriver and ExtentReports for test reporting.
+
+---
+
+## Features
+1. **Add Product**: Tests the functionality of adding a product to the system.
+2. **Search Product**: Verifies searching for a specific product by name.
+3. **Edit Product**: Validates the ability to edit existing product details.
+4. **Delete Product**: Confirms that a product can be deleted from the system.
+5. **Search All Products**: Checks if all products are displayed in the list.
+6. **Counter Test**: Ensures that clicking the "+" button increments the counter.
+
+---
+
+## Project Structure
+- **BaseSetup.java**: Contains the shared setup for WebDriver, ExtentReports, and utility methods.
+- **Test Classes**:
+  - `AddProduct.java`
+  - `SearchProduct.java`
+  - `EditProduct.java`
+  - `DeleteProduct.java`
+  - `SearchProductAll.java`
+  - `Counter.java`
+- **Report/**: Directory for storing the test reports.
+- **lib/**: Contains all the required libraries and dependencies.
+
+---
+
+## Prerequisites
+1. **Java**: Version 11 or later.
+2. **Maven**: Ensure Maven is installed and configured.
+3. **WebDriver**: Install the appropriate WebDriver for your browser (e.g., ChromeDriver, EdgeDriver).
+4. **Dependencies**:
+   - Selenium WebDriver
+   - ExtentReports
+
+---
+
+## How to Run the Tests
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/username/ProductTestAutomation.git
+
+## How to Run Specific Tests
+### Running the **Counter** Test
+1. Open the `BaseSetup` class and ensure the following line points to the **Counter** application:
+   ```java
+   driver.get("https://flutter-angular.web.app/");
+### Running the **Product** Test
+1. Open the `BaseSetup` class and ensure the following line points to the **Product** application:
+   ```java
+   driver.get(https://e-commerce-kib.netlify.app/);");
